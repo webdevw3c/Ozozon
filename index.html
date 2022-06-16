@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Ozozon</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__top">
+					<div class="header__main">
+						<button type="button" class="icon-menu"><span></span></button>
+						<a href="#" class="header__logo">
+							<picture>
+								<source srcset="img/logo.webp 1x, img/logo@2x.webp 2x" type="image/webp">
+								<img src="img/logo.png.png" srcset="img/logo@2x.png 2x" alt="logo">
+							</picture>
+						</a>
+					</div>
+					<div class="header__actions">
+						<div class="header__menu menu">
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item"><a href="#" data-goto=".about-cleaning" class="menu__link">Про уборки</a></li>
+									<li class="menu__item"><a href="#" data-goto=".cleaning-types" class="menu__link">Оформить заказ</a></li>
+									<li class="menu__item"><a href="#" data-goto=".board" class="menu__link">О нас</a></li>
+									<li class="menu__item"><a href="#" data-goto=".reviews" class="menu__link">Отзывы</a></li>
+									<li class="menu__item"><a href="#" data-goto=".faq" class="menu__link">F.A.Q.</a></li>
+									<li class="menu__item"><a href="#" data-goto="" class="menu__link">Акции</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="header__communications">
+							<div class="header__contacts contacts">
+								<a class="contacts__link" href="tel:+74958453444">+7 (495) 845-34-44</a>
+								<a class="contacts__btn" href="tel:+74958453444">
+									<svg width="70" height="70">
+										<use xlink:href="img/icons/sprite.svg#phone-btn"></use>
+									</svg>
+								</a>
+							</div>
+							<div class="header__user user">
+								<button type="button" class="user__btn">Войти</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header__body">
+					<div class="header__body-text body-text">
+						<h1 class="body-text__title">Уборка квартир в Москве и Подмосковье</h1>
+						<p class="body-text__text">Идеальный порядок каждую неделю</p>
+						<span>от 1590 руб</span>
+					</div>
+					<form action="#" class="header__form form">
+						<fieldset class="form__element">
+							<label class="form__label-type" for="сleaning-type">Тип уборки</label>
+							<select id="сleaning-type" class="form__select-type" name="type">
+								<option value="1" selected="selected">Поддерживающая</option>
+								<option value="2">Генеральная</option>
+							</select>
+						</fieldset>
+						<fieldset class="form__element">
+							<label class="form__label-rooms" for="quantity-rooms">Количество комнат</label>
+							<select id="quantity-rooms" class="form__select-rooms" name="rooms">
+								<option value="1" selected="selected">1-комнатная</option>
+								<option value="2">2-комнатная</option>
+								<option value="3">3-комнатная</option>
+								<option value="4">4-комнатная</option>
+								<option value="5">5-комнатная</option>
+								<option value="6">6-комнатная</option>
+								<option value="7">7-комнатная</option>
+								<option value="8">8-комнатная</option>
+							</select>
+						</fieldset>
+						<input class="form__btn" type="submit" value="Оформить заявку">
+					</form>
+					<p class="header__text">Закажите уборку на завтра прямо сейчас и получите СКИДКУ 15%.<br>
+						Промокод: <span>YESTERDAY</span></p>
+				</div>
+			</div>
+		</header>
+		<main class="page page-main">
+			<section class="page-main__about-cleaning about-cleaning">
+				<div class="about-cleaning__container">
+					<div class="about-cleaning__inner">
+						<h2 class="about-cleaning__title">Про уборки</h2>
+						<p class="about-cleaning__text">Клинер приедет со всем необходимым для уборки. Стоимость уборки
+							рассчитывается от количества комнат.</p>
+						<div data-tabs class="tabs">
+							<p class="tabs__text">В каждый тариф входит уборка:</p>
+							<ul data-tabs-titles class="tabs__navigation">
+								<li class="tabs__title _tab-active">В комнате</li>
+								<li class="tabs__title">На кухне</li>
+								<li class="tabs__title">В ванной</li>
+								<li class="tabs__title">В коридоре</li>
+							</ul>
+							<div data-tabs-body class="tabs__content">
+								<div class="tabs__body">
+									<picture>
+										<source data-srcset="img/rooms/bedroom.webp 1x, img/rooms/bedroom@2x.webp 2x" type="image/webp">
+										<img data-src="img/rooms/bedroom.jpg" data-srcset="img/rooms/bedroom@2x.jpg 2x" src="img/rooms/bathroom_10.jpg" alt="Спальня">
+									</picture>
+								</div>
+								<div class="tabs__body">
+									<picture>
+										<source data-srcset="img/rooms/kitchen.webp 1x, img/rooms/kitchen@2x.webp 2x" type="image/webp">
+										<img data-src="img/rooms/kitchen.jpg" data-srcset="img/rooms/kitchen@2x.jpg 2x" src="img/rooms/kitchen_10.jpg" alt="Кухня">
+									</picture>
+								</div>
+								<div class="tabs__body">
+									<picture>
+										<source data-srcset="img/rooms/bathroom.webp 1x, img/rooms/bathroom@2x.webp 2x" type="image/webp">
+										<img data-src="img/rooms/bathroom.jpg" data-srcset="img/rooms/bathroom@2x.jpg 2x" src="img/rooms/bathroom_10.jpg" alt="Ванная">
+									</picture>
+								</div>
+								<div class="tabs__body">
+									<picture>
+										<source data-srcset="img/rooms/corridor.webp 1x, img/rooms/corridor@2x.webp 2x" type="image/webp">
+										<img data-src="img/rooms/corridor.jpg" data-srcset="img/rooms/corridor@2x.jpg 2x" src="img/rooms/corridor_10.jpg" alt="Коридор">
+									</picture>
+								</div>
+							</div>
+						</div>
+						<div class="about-cleaning__items">
+							<p class="about-cleaning__item">
+								<svg width="16" height="16">
+									<use xlink:href="img/icons/sprite.svg#ellipse-green"></use>
+								</svg>
+								<span>Поддерживающая уборка</span>
+							</p>
+							<p class="about-cleaning__item">
+								<svg width="16" height="16">
+									<use xlink:href="img/icons/sprite.svg#ellipse-yellow"></use>
+								</svg>
+								<span>Генеральная уборка</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page-main__cleaning-types cleaning-types">
+				<div class="cleaning-types__container">
+					<div class="cleaning-types__inner">
+						<h2 class="cleaning-types__title">Типы уборки</h2>
+						<div class="cleaning-types__tariff tariff">
+							<div class="tariff__item">
+								<div class="tariff__item-inner">
+									<div class="tariff__header">
+										<svg width="16" height="16">
+											<use xlink:href="img/icons/sprite.svg#ellipse-green"></use>
+										</svg>
+										<h3 class="tariff__title">
+											Поддерживающая
+										</h3>
+									</div>
+									<div class="tariff__docket">
+										<ul class="tariff__list">
+											<li class="tariff__list-item">Протираем мебель сверху донизу</li>
+											<li class="tariff__list-item">Чистим зеркала и стеклянные поверхности</li>
+											<li class="tariff__list-item">Пылесосим ковры</li>
+											<li class="tariff__list-item">Моем пол</li>
+											<li class="tariff__list-item">Убирем мусор</li>
+											<li class="tariff__list-item">Вычишаем пыль из углов</li>
+											<li class="tariff__list-item">Протираем плинтусы</li>
+										</ul>
+									</div>
+								</div>
+								<div class="tariff__price price">
+									<div class="price__inner">
+										<div class="price__text">
+											<p class="price__normal">Стоимость уборки:</p>
+											<p class="price__light">во всех комнатах</p>
+										</div>
+										<p class="price__bold">1590 руб.</p>
+									</div>
+									<div class="price__button">
+										<button type="button" class="price__btn">Оформить заявку</button>
+									</div>
+								</div>
+							</div>
+							<div class="tariff__plus">
+								<div class="tariff__plus-inner">
+									<div class="tariff__header">
+										<svg width="16" height="16">
+											<use xlink:href="img/icons/sprite.svg#ellipse-yellow"></use>
+										</svg>
+										<h3 class="tariff__title">
+											Генеральная
+										</h3>
+									</div>
+									<div class="tariff__docket-plus">
+										<ul class="tariff__list">
+											<li class="tariff__list-item">Протираем мебель сверху донизу</li>
+											<li class="tariff__list-item">Чистим зеркала и стеклянные поверхности</li>
+											<li class="tariff__list-item">Пылесосим ковры</li>
+											<li class="tariff__list-item">Моем пол</li>
+											<li class="tariff__list-item">Убирем мусор</li>
+											<li class="tariff__list-item">Вычишаем пыль из углов</li>
+											<li class="tariff__list-item">Протираем плинтусы</li>
+										</ul>
+										<h4 class="tariff__title-plus">
+											Генеральная:
+										</h4>
+										<ul class="tariff__list-plus">
+											<li class="tariff__list-plus-item">Мойка радиаторора отопления</li>
+											<li class="tariff__list-plus-item">Очистка выключателей и дверных ручек</li>
+											<li class="tariff__list-plus-item">Обеспыливание настенных светильников</li>
+										</ul>
+									</div>
+								</div>
+								<div class="tariff__price price">
+									<div class="price__inner">
+										<div class="price__text">
+											<p class="price__normal">Стоимость уборки:</p>
+											<p class="price__light">во всех комнатах</p>
+										</div>
+										<p class="price__bold">1990 руб.</p>
+									</div>
+									<div class="price__button">
+										<button type="button" class="price__btn">Оформить заявку</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="cleaning-types__enumerator enumerator">
+							<div class="enumerator__name">
+								<h3 class="enumerator__title">Счетчик OZOZON</h3>
+								<p class="enumerator__text">23 июля 2017</p>
+							</div>
+							<div class="enumerator__rooms">
+								<p class="enumerator__amount">16882</p>
+								<p class="enumerator__rooms-text">Квартир убрано</p>
+							</div>
+							<div class="enumerator__rooms">
+								<p class="enumerator__amount">17</p>
+								<p class="enumerator__rooms-text">Сегодня в работе</p>
+							</div>
+							<div class="enumerator__rooms">
+								<p class="enumerator__amount">2</p>
+								<p class="enumerator__rooms-text">Свободные клинеры</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page-main__board board">
+				<div class="board__container">
+					<div class="board__contant">
+						<h2 class="board__title">Вы обязательно останетесь довольны, ведь мы...</h2>
+						<div class="board__inner">
+							<div class="board__item">
+								<svg width="77" height="127">
+									<use xlink:href="img/icons/sprite.svg#pot"></use>
+								</svg>
+								<p class="board__text">
+									Используем только уникальные экологичные средства
+								</p>
+							</div>
+							<div class="board__item">
+								<svg width="97" height="127">
+									<use xlink:href="img/icons/sprite.svg#cleaner"></use>
+								</svg>
+								<p class="board__text">
+									Отбираем только самых лучших клинеров
+								</p>
+							</div>
+							<div class="board__item">
+								<svg width="95" height="127">
+									<use xlink:href="img/icons/sprite.svg#bubbles"></use>
+								</svg>
+								<p class="board__text">
+									Используем особо эффективную технологию уборки
+								</p>
+							</div>
+							<div class="board__item">
+								<svg width="128" height="127">
+									<use xlink:href="img/icons/sprite.svg#heart"></use>
+								</svg>
+								<p class="board__text">
+									Очень любим наших клиентов и предоставляем скидки
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page-main__faq faq">
+				<div class="faq__container">
+					<h2 class="faq__title">Часто задаваемые вопросы</h2>
+					<div class="faq__inner">
+						<div data-tabs="768" class="faq-tabs">
+							<ul data-tabs-titles class="faq-tabs__navigation">
+								<li class="faq-tabs__title"><a class="faq-tabs__text">
+										По оплате
+									</a>
+									<svg width="88" height="72">
+										<use xlink:href="img/icons/sprite.svg#wallet"></use>
+									</svg>
+								</li>
+								<li class="faq-tabs__title  _tab-active"><a class="faq-tabs__text">
+										По уборке
+									</a>
+									<svg width="82" height="86">
+										<use xlink:href="img/icons/sprite.svg#broom"></use>
+									</svg>
+								</li>
+								<li class="faq-tabs__title"><a class="faq-tabs__text">
+										По персоналу
+									</a>
+									<svg width="95" height="72">
+										<use xlink:href="img/icons/sprite.svg#staff"></use>
+									</svg>
+								</li>
+							</ul>
+							<div data-tabs-body class="faq-tabs__content">
+								<div class="faq-tabs__body">
+								</div>
+								<div class="faq-tabs__body">
+									<ul class="faq-tabs__list">
+										<li class="faq-tabs__list-item"><a href="#" class="faq-tabs__list-link">1.Что
+												входит в
+												Ваши
+												уборки?</a></li>
+										<li class="faq-tabs__list-item"><a href="#" class="faq-tabs__list-link">2.Обязательно ли
+												мое
+												присутствие?</a></li>
+										<li class="faq-tabs__list-item"><a href="#" class="faq-tabs__list-link">3.Чем вы
+												убираетесь?</a></li>
+										<li class="faq-tabs__list-item"><a href="#" class="faq-tabs__list-link">4.Что
+												нужно
+												предоставить
+												клинеру для уборки?</a></li>
+										<li class="faq-tabs__list-item"><a href="#" class="faq-tabs__list-link">5.Клинеру нужны
+												чистые
+												тряпочки?</a></li>
+										<li class="faq-tabs__list-item"><a href="#" class="faq-tabs__list-link">6.Могу
+												ли я дать
+												клинеру
+												чаевые? Должен ли я вас предупреждать об этом?</a></li>
+										<li class="faq-tabs__list-item"><a href="#" class="faq-tabs__list-link">7.У меня
+												большая
+												квартира. Как
+												ее считать?</a></li>
+										<li class="faq-tabs__list-item"><a href="#" class="faq-tabs__list-link">8.Делаете ли вы
+												уборку в
+												выходные?</a></li>
+										<li class="faq-tabs__list-item"><a href="#" class="faq-tabs__list-link">9.Выезжаете ли вы
+												в область за
+												МКАД?</a></li>
+										<li class="faq-tabs__list-item"><a href="#" class="faq-tabs__list-link">10.Что
+												такое
+												подписка и в чем
+												ее преимущество?</a></li>
+										<li class="faq-tabs__list-item"><a href="#" class="faq-tabs__list-link">11.Чем
+												вы не
+												занимаетесь?</a>
+										</li>
+									</ul>
+								</div>
+								<div class="faq-tabs__body">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page-main__reviews reviews">
+				<div class="reviews__container">
+					<h2 class="reviews__title">Отзывы</h2>
+					<div class="reviews__inner">
+						<div class="reviews__swiper swiper-buttons">
+							<button type="button" class="swiper-button swiper-button_prev">
+								<svg width="6" height="7">
+									<use xlink:href="img/icons/sprite.svg#arrow-left"></use>
+								</svg>
+							</button>
+							<button type="button" class="swiper-button swiper-button_next">
+								<svg width="6" height="7">
+									<use xlink:href="img/icons/sprite.svg#arrow-right"></use>
+								</svg>
+							</button>
+						</div>
+						<div class="reviews__slider-container">
+							<div class="reviews__slider swiper-reviews">
+								<div class="reviews__wrapper swiper-wrapper">
+									<div class="reviews__slide swiper-slide">
+										<div class="reviews__avatar">
+											<picture>
+												<source srcset="img/avatar-mobail.webp 1x, img/avatar-mobail@2x.webp 2x" type="image/webp" media="(max-width: 480px)">
+												<source srcset="img/avatar-mobail.png 1x, img/avatar-mobail@2x.png 2x" type="image/png" media="(max-width: 480px)">
+												<source srcset="img/avatar.webp 1x, img/avatar@2x.webp 2x" type="image/webp">
+												<img src="img/avatar.png" srcset="img/avatar@2x.png 2x" alt="Аватар">
+											</picture>
+										</div>
+										<div class="reviews__body">
+											<header class="reviews__header">
+												<span class="reviews__author">Олеся Воливач</span>
+												<span class="reviews__meta">12 окт 2016 в 13:37</span>
+											</header>
+											<div class="reviews__body-inner">
+												Далеко-далеко за словесными горами в стране гласных и согласных живут
+												рыбные
+												тексты. Повстречался дороге до, подзаголовок прямо заманивший текст
+												взгляд
+												эта ручеек вдали! Которое, взобравшись текст эта лучше возвращайся свое!
+												Запятых, ему.
+												Переулка, жизни снова. Запятых на берегу ipsum, встретил ты точках
+												строчка
+												которой снова приставка не заголовок, продолжил, деревни вскоре
+												повстречался
+												своего языкового он большой безорфографичный курсивных путь большого
+												переписывается взгляд собрал!
+												эта ручеек вдали! Которое, взобравшись текст эта лучше возвращайся свое!
+												Запятых, ему.
+											</div>
+										</div>
+									</div>
+									<div class="reviews__slide swiper-slide">
+										<div class="reviews__avatar">
+											<picture>
+												<source srcset="img/avatar-mobail.webp 1x, img/avatar-mobail@2x.webp 2x" type="image/webp" media="(max-width: 480px)">
+												<source srcset="img/avatar-mobail.png 1x, img/avatar-mobail@2x.png 2x" type="image/png" media="(max-width: 480px)">
+												<source srcset="img/avatar.webp 1x, img/avatar@2x.webp 2x" type="image/webp">
+												<img src="img/avatar.png" srcset="img/avatar@2x.png 2x" alt="Аватар">
+											</picture>
+										</div>
+										<div class="reviews__body">
+											<header class="reviews__header">
+												<span class="reviews__author">Олеся Воливач</span>
+												<span class="reviews__meta">12 окт 2016 в 13:37</span>
+											</header>
+											<div class="reviews__body-inner">
+												Далеко-далеко за словесными горами в стране гласных и согласных живут
+												рыбные
+												тексты. Повстречался дороге до, подзаголовок прямо заманивший текст
+												взгляд
+												эта ручеек вдали! Которое, взобравшись текст эта лучше возвращайся свое!
+												Запятых, ему.
+												Переулка, жизни снова. Запятых на берегу ipsum, встретил ты точках
+												строчка
+												которой снова приставка не заголовок, продолжил, деревни вскоре
+												повстречался
+												своего языкового он большой безорфографичный курсивных путь большого
+												переписывается взгляд собрал!
+												эта ручеек вдали! Которое, взобравшись текст эта лучше возвращайся свое!
+												Запятых, ему.
+												Далеко-далеко за словесными горами в стране гласных и согласных живут
+												рыбные
+												тексты. Повстречался дороге до, подзаголовок прямо заманивший текст
+												взгляд
+												эта ручеек вдали! Которое, взобравшись текст эта лучше возвращайся свое!
+												Запятых, ему.
+												Переулка, жизни снова. Запятых на берегу ipsum, встретил ты точках
+												строчка
+												которой снова приставка не заголовок, продолжил, деревни вскоре
+												повстречался
+												своего языкового он большой безорфографичный курсивных путь большого
+												переписывается взгляд собрал!
+												эта ручеек вдали! Которое, взобравшись текст эта лучше возвращайся свое!
+												Запятых, ему.
+												Далеко-далеко за словесными горами в стране гласных и согласных живут
+												рыбные
+												тексты. Повстречался дороге до, подзаголовок прямо заманивший текст
+												взгляд
+												эта ручеек вдали! Которое, взобравшись текст эта лучше возвращайся свое!
+												Запятых, ему.
+												Переулка, жизни снова. Запятых на берегу ipsum, встретил ты точках
+												строчка
+												которой снова приставка не заголовок, продолжил, деревни вскоре
+												повстречался
+												своего языкового он большой безорфографичный курсивных путь большого
+												переписывается взгляд собрал!
+												эта ручеек вдали! Которое, взобравшись текст эта лучше возвращайся свое!
+												Запятых, ему.
+											</div>
+										</div>
+									</div>
+									<div class="reviews__slide swiper-slide">
+										<div class="reviews__avatar">
+											<picture>
+												<source srcset="img/avatar-mobail.webp 1x, img/avatar-mobail@2x.webp 2x" type="image/webp" media="(max-width: 480px)">
+												<source srcset="img/avatar-mobail.png 1x, img/avatar-mobail@2x.png 2x" type="image/png" media="(max-width: 480px)">
+												<source srcset="img/avatar.webp 1x, img/avatar@2x.webp 2x" type="image/webp">
+												<img src="img/avatar.png" srcset="img/avatar@2x.png 2x" alt="Аватар">
+											</picture>
+										</div>
+										<div class="reviews__body">
+											<header class="reviews__header">
+												<span class="reviews__author">Олеся Воливач</span>
+												<span class="reviews__meta">12 окт 2016 в 13:37</span>
+											</header>
+											<div class="reviews__body-inner">
+												Далеко-далеко за словесными горами в стране гласных и согласных живут
+												рыбные
+												тексты. Повстречался дороге до, подзаголовок прямо заманивший текст
+												взгляд
+												эта ручеек вдали! Которое, взобравшись текст эта лучше возвращайся свое!
+												Запятых, ему.
+												Переулка, жизни снова. Запятых на берегу ipsum, встретил ты точках
+												строчка
+												которой снова приставка не заголовок, продолжил, деревни вскоре
+												повстречался
+												своего языкового он большой безорфографичный курсивных путь большого
+												переписывается взгляд собрал!
+												эта ручеек вдали! Которое, взобравшись текст эта лучше возвращайся свое!
+												Запятых, ему.
+												Далеко-далеко за словесными горами в стране гласных и согласных живут
+												рыбные
+												тексты. Повстречался дороге до, подзаголовок прямо заманивший текст
+												взгляд
+												эта ручеек вдали! Которое, взобравшись текст эта лучше возвращайся свое!
+												Запятых, ему.
+												Переулка, жизни снова. Запятых на берегу ipsum, встретил ты точках
+												строчка
+												которой снова приставка не заголовок, продолжил, деревни вскоре
+												повстречался
+												своего языкового он большой безорфографичный курсивных путь большого
+												переписывается взгляд собрал!
+												эта ручеек вдали! Которое, взобравшись текст эта лучше возвращайся свое!
+												Запятых, ему.
+												Далеко-далеко за словесными горами в стране гласных и согласных живут
+												рыбные
+												тексты. Повстречался дороге до, подзаголовок прямо заманивший текст
+												взгляд
+												эта ручеек вдали! Которое, взобравшись текст эта лучше возвращайся свое!
+												Запятых, ему.
+												Переулка, жизни снова. Запятых на берегу ipsum, встретил ты точках
+												строчка
+												которой снова приставка не заголовок, продолжил, деревни вскоре
+												повстречался
+												своего языкового он большой безорфографичный курсивных путь большого
+												переписывается взгляд собрал!
+												эта ручеек вдали! Которое, взобравшись текст эта лучше возвращайся свое!
+												Запятых, ему.
+												Далеко-далеко за словесными горами в стране гласных и согласных живут
+												рыбные
+												тексты. Повстречался дороге до, подзаголовок прямо заманивший текст
+												взгляд
+												эта ручеек вдали! Которое, взобравшись текст эта лучше возвращайся свое!
+												Запятых, ему.
+												Переулка, жизни снова. Запятых на берегу ipsum, встретил ты точках
+												строчка
+												которой снова приставка не заголовок, продолжил, деревни вскоре
+												повстречался
+												своего языкового он большой безорфографичный курсивных путь большого
+												переписывается взгляд собрал!
+												эта ручеек вдали! Которое, взобравшись текст эта лучше возвращайся свое!
+												Запятых, ему.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="reviews__all">
+							<a href="#" class="reviews__link">Все отзывы</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
